@@ -1,0 +1,283 @@
+<!--Problem faced- cant do the hover padding effect in navbar-->
+<!DOCTYPE>
+<html>
+<head>
+	<style>
+	body{
+		margin: 0;
+		font-family: Impact, fantasy;
+	}
+	.navbar-container{
+		padding: 4px;
+	}
+	.navbar{
+		background-color: white;
+		opacity: 0.9;
+		overflow: hidden;
+        box-shadow: 0px 3px 11px #888888;
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
+	}
+	.navbar a{
+		text-decoration: none;
+		padding: 12px 14px;
+		float: left;
+		color: black;
+		font-size: 18px;
+	}
+	.navbar a:hover{
+		background-color: black;
+		color: white;
+	}
+	.navbar a:hover:first-child{
+		background-color: rgba(255,255,255,1);
+		fuck();
+		color: black;
+	}
+	.navbar a:hover{
+		background-color: rgba(153, 153, 153,0.4);
+		color: white;
+		transition: background-color 0.2s;
+	}
+	.img-container{
+		padding: 10px;
+	}
+	.img-container img{
+		width: 100%;
+		height: auto;
+	}
+	.img-container {
+		position: relative;
+		text-align: center;
+		color: white;
+		top: 40px;
+	}
+	.centered{
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		transform: translate(-50%,-50%);
+		font-size: 30px;
+		width: 60px;
+		height: 60px;
+		transition: transform 2s;
+		padding: 100px;
+
+	}
+	.centered:hover{
+		transform: scale(1.5);
+	}
+	.centered .logo{
+		top: 50%;
+		transform: translate(0,-50%);
+		background-color: rgba(0,0,0,0.5);
+		padding: 15px;
+		mix-blend-mode: screen;
+	}
+	.centered p{
+ 		display: inline;
+	}
+	.homes div{
+		display: inline;
+		height: 100px;
+	}
+	.container-2{
+		margin: 0px 10px;
+	}
+	.container-2 img{
+		float: left;
+		width: 23%;
+		margin: 1%;
+	}
+	.about{
+		word-spacing: 1em;
+		margin: 0 3%;
+		text-align: justify;
+	}
+	.homes img{
+		box-shadow: 10px 10px 15px #888888;
+	}
+	.homes img:hover{
+		transform: scale(1.1);
+		transition: 0.2s;
+	}
+	.team-container{
+		margin: 0 2%;
+	}
+	.member{
+		float: left;
+		width: 22%;
+		max-width: 400px;
+		margin: 1.5%;
+		box-shadow: 1px 2px 10px gray;
+	}
+	.member h2,h4,p{
+		padding: 5%;
+	} 
+	.member h4{
+		color: gray;
+	}
+	input[type=text], #email{
+		width: 94%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		transition: width 0.3s ease-in;
+		border-right-color: rgba(0,0,0,0.5);
+		box-shadow: 1px 1px  10px rgba(0,0,0,0.4);
+	}
+	input:focus, input:hover, #email:hover, #email:focus{
+		width: 100%;
+		background-color: rgba(0,0,0,0.02);
+	}
+	.input-container{
+		margin: 1.7%;
+	}
+	input[type=submit]{
+		text-transform: uppercase;
+		background-color: black;
+		color: white;
+		width: 20%;
+		height: 40px;
+		border: none;
+		margin-top: 2%;
+	}
+	.button-container{
+		text-align: right;
+		margin-right: 5%;
+	}
+	 .hvr-underline-from-left {
+ 	 	 position: relative;
+  		padding: 18px 20px;
+  		text-decoration: none;
+  		color: black;
+  		font-size: 18px;
+}
+	.hvr-underline-from-left::before {
+  		  content: "";
+  		  position: absolute;
+  		  font-size: 1000px;
+		  left: 0;
+		  right: 100%;
+		  bottom: 0;
+		  background: black;
+		  height: 5px;
+		  -webkit-transition-property: right;
+		  transition-property: right;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-in;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+       right: 0;
+}
+	</style>
+	<title>Architects</title>
+</head>
+<body>
+	<div class="navbar-container">
+	<div class="navbar">
+		<a href="#architects" style="background-color: black;color: white">Architects</a>
+		<a href="#projects">Porjects</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	</div>
+</div>
+	<main>
+		<div class="img-container">
+	<img src="architects.jpg">
+	<div class="centered"><p class="logo">BR</p><p style="margin-left: 10px">Architect</p></div>
+</div>
+</main>
+<br/><br/><br/><br/>
+	<div class= "container-2">
+	<h1>Projects</h1>
+	<br/>
+	<hr style="background-color: gray;opacity: 0.3;">
+	<br/>
+		<div class="homes">
+	<div><img src="house1.jpg"></div>
+	<div><img src="house2.jpg"></div>
+	<div><img src="house3.jpg"></div>
+	<div><img src="house4.jpg"></div>
+	<div><img src="house1.jpg"></div>
+	<div><img src="house2.jpg"></div>
+	<div><img src="house3.jpg"></div>
+	<div><img src="house4.jpg"></div>
+</div>
+</div>
+<div class="about">
+	<h1  style="margin-top: 500px">About</h1>
+	<br/><hr style="background-color: gray;"
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<div class="team-container">
+	<div class="member 1">
+		<img src="team1.jpg" width="100%">
+		<h2>John Doe</h2>
+		<h4>CEO & Founder</h4>
+		<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	</div>
+	<div class="member 2">
+		<img src="team2.jpg" width="100%">
+		<h2>John Doe</h2>
+		<h4>CEO & Founder</h4>
+		<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	</div>
+	<div class="member 3">
+		<img src="team3.jpg" width="100%">
+		<h2>John Doe</h2>
+		<h4>CEO & Founder</h4>
+		<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	</div>
+	<div class="member 4">
+		<img src="team4.jpg" width="100%">
+		<h2>John Doe</h2>
+		<h4>CEO & Founder</h4>
+		<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	</div>
+</div>
+
+<div class="input-container">
+	<h1 id="contact">Contact</h1><hr>
+	<p>Lets get in touch and talk about your project</p>
+	<input type= "text" id="name" name="name" placeholder="Name"><br/>
+	<input type= "emai" id="email" name="email" placeholder="Email"><br/>
+	<input type= "text" id="subject" name="subject" placeholder="Subject"><br/>
+	<input type= "text" id="comment" name="comment" placeholder="Comment"> <br/><br/>
+	<div class="button-container">
+	<a href="#" class="hvr-underline-from-left">Send Message</a>
+    </div>
+
+</div>
+<br/><br/>
+<div id="map-canvas" style=" width: 100%; height: 60%"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+<script>
+	// if HTML DOM Element that contains the map is found...
+if (document.getElementById('map-canvas')){
+ 
+    // Coordinates to center the map
+    var myLatlng = new google.maps.LatLng(52.525595,13.393085);
+ 
+    // Other options for the map, pretty much selfexplanatory
+    var mapOptions = {
+        zoom: 14,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+ 
+    // Attach a map to the DOM Element, with the defined settings
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+}
+</script>
+</body>
+</html>
